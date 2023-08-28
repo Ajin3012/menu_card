@@ -67,12 +67,12 @@ body{
 	color:white;
 }
 section{
-	padding:50px 0;
+	padding:20px 0;
 }
 h3{
 	font-size:15px;
 	color:grey;
-	padding-top:10px;
+	/* padding-top:10px; */
 	font-weight:200;
 	letter-spacing:1px;
 }
@@ -83,18 +83,19 @@ h3{
 	background-color:grey;
 	display:inline-block;
 	position:absolute;
-    top:13%;
+    top:30px;
 	left:90px;
 }
 .rupees p::before{
 	content:"";
-	width:53%;
+	width:75%;
 	background-color:grey;
 	display:inline-block;
 	position:absolute;
 	border-top:1px dotted white;
 	top:51px;
 	right:32px;
+	/* overflow:hidden; */
 }
  h1{
 	font-size:30px;
@@ -133,6 +134,13 @@ h3{
 h2{
 	font-size:14px;
 	padding-top:3px;
+	display:inline-block;
+	/* z-index:-1; */
+	background-color:black;
+}
+h2:hover{
+	color:#c29b55;
+	cursor:pointer;
 }
 p{
 	color:grey;
@@ -141,6 +149,7 @@ p{
 }
 .menu_sub{
 	display:flex;
+	z-index:1;
 }	
 .menu{
 	display:flex;
